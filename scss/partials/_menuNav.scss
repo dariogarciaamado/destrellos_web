@@ -1,0 +1,98 @@
+/*ESTILOS MENU DE NAVEGACION*/
+
+#miMenuNav{
+    z-index: 2000;
+    background-color: $armony_color!important;
+    position: fixed;
+
+
+    /*Imagen Logo a la izquierda de la barra de navegacion*/
+    .imgLogo{
+        @include img_size(7rem, auto, 0, 0, 0, 1vw);
+        
+        animation: FXcorazon infinite 2s;
+        
+        /*Comportamiento al pasar el mouse por arriba*/
+        &:hover{
+            animation: none;
+            transform: scale(1.1);
+        }
+
+        /*Comportamiento al hacer clic*/
+        &:active{
+            filter: blur(2px);
+        }
+
+        /*Efecto tipo corazon para el logo*/
+        @keyframes FXcorazon{
+            30%{transform: scale(1);}
+            40%{transform: scale(1.05);}
+            50%{transform: scale(1);}
+            60%{transform: scale(1.05);}
+            70%{transform: scale(1);}   
+        }
+    }
+
+    /*Texto/link del menu de navegacion*/
+    .menuNavText{
+        a{
+            /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+            @include fuentes1(black, $fuente_menuNav, $menuNav_size, bold, normal, none, uppercase, center, 1rem, .1rem);
+
+            @media only screen and (min-width: 990px) and (max-width: 1140px){
+                font-size: 1.4vw; /*tamaño fuente*/
+            }
+
+            @media only screen and (max-width: 990px){
+                font-size: 1rem; /*tamaño fuente*/
+            }
+
+            /*Comportamiento al pasar el mouse por arriba*/
+            &:hover{
+                color:rgb(251,199,116) !important; /*color de letra*/
+            }
+        }
+
+        /*Comportamiento al pasar el mouse por arriba*/
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        &:active{
+            filter: blur(2px);
+        }
+    }
+
+    .menuSocial{
+
+        /*CUANDO SE VEA EN UNA TABLE O MOVIL LOS ICONOS DE REDES SOCIALES DESAPARECEN*/
+        /*DE EL MENU DE NAVEGACION*/
+        @media only screen and (max-width: 990px){
+            display: none;
+        }
+        
+        /*Iconos de redes sociales con link*/
+        .iconSocial{
+            @include img_size(35px, auto, 0, .05rem, 0, .05rem);
+            
+            @media only screen and (max-width: 1170px){
+                @include img_size(2.1vw, auto, 0, 0, 0, 0);
+            }
+
+            /*Comportamiento al pasar el mouse por arriba*/
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            /*Comportamiento al hacer clic*/
+            &:active{
+                filter: blur(2px);
+            }
+        }
+    }
+    
+}
+
+
+
+/*FIN ESTILOS DE MENU DE NAVEGACION*/

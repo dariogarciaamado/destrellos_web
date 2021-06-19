@@ -1,0 +1,23 @@
+/*Base*/
+@import "../scss/base/reset";
+@import "../scss/base/background";
+
+
+/*Mixins*/
+@import "../scss/mixins/mixins";
+
+
+/*Variables*/
+@import "../scss/variables/fonts";
+@import "../scss/variables/textSize";
+@import "../scss/variables/sizes";
+@import "../scss/variables/colors";
+
+
+/*Partials*/
+@import "../scss/partials/menuNav";
+@import "../scss/partials/SocialMovil";
+@import "../scss/partials/portada";
+@import "../scss/partials/queHacemos";
+@import "../scss/partials/modelos";
+@import "../scss/partials/pageFooter";

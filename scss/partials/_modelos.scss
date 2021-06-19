@@ -1,0 +1,45 @@
+/*ESTILO PARA MODELOS, ES UN CARRUCEL PROPIO DE BOOTSTRAP*/
+
+#modelos{
+    padding: (1rem 2vw);
+    position: relative;
+    
+    text-align: center;
+    align-items: center;
+
+
+    div{
+        /*Titulo Modelo*/
+        h2{
+            
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: opacity(0%);
+
+        
+            /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+            @include fuentes1(white, $fuente_titulos1, $title_size1, bold, normal, none, uppercase, center, 5rem, .05rem);  
+        
+            @media only screen and (max-width: 990px){
+                /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+                @include fuentes1(white, $fuente_titulos1, $title_size1M, bold, normal, none, uppercase, center, 3rem, .03rem);
+            }
+        }
+    }
+
+    &:hover img{
+        filter:blur(2px) brightness(40%);
+        transition: all 1s;
+    } 
+
+    &:hover h2 {
+        filter:opacity(100%);
+        transition: all 1s;
+    }
+}
+
+
+/*FIN ESTILOS MODELOS*/

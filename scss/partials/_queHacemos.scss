@@ -1,0 +1,46 @@
+/*ESTILOS SECCION QUE HACEMOS*/
+
+#queHacemos{
+    padding:$general_padding; /*se modifica en el _variables.scss*/
+    display: flex;
+    text-align: center;
+    
+
+    /*Imagen superior al titulo*/
+    img{
+        /*Ancho, alto y margenes de imagen*/
+        @include img_size(20rem, auto, 0, 0, 2rem, 0);
+        @media only screen and (max-width: 990px){
+            @include img_size(15rem, auto, 0, 0, 1rem, 0);
+        }
+    }
+    
+    /*Titulos Que Hacemos*/
+    .titulos1{
+        /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+        @include fuentes1(black, $fuente_titulos1, $title_size1, bold, normal, none, uppercase, center, 5rem, .05rem);
+        
+        @media only screen and (max-width: 990px){
+            /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+            @include fuentes1(black, $fuente_titulos1, $title_size1M, bold, normal, none, uppercase, center, 3rem, .03rem);
+        }
+    }
+
+    /*Texto Que Hacemos*/
+    .textos1{
+        /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+        @include fuentes1(black, $fuente_textos1, $text_size1, bold, normal, none, none, center, 2rem, .1rem);
+        
+        @media only screen and (max-width: 990px){
+            /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+        @include fuentes1(black, $fuente_textos1, $text_size1M, bold, normal, none, none, center, 1rem, .05rem);
+        }  
+    }
+
+
+
+}
+
+
+
+

@@ -1,0 +1,24 @@
+/*Fuentes para NavMenu, Titulos y Texto*/
+@mixin fuentes1 ($color, $fuente, $tamano, $tipo, $estilo, $deco, $transform, $alineacion, $seplinea, $sepword){
+    color: $color; /*color de letra*/
+    font-family: $fuente; /*fuente*/
+    font-size: $tamano; /*tamaño fuente*/
+    font-weight: $tipo; /*tipo de letra, comun, negrita etc*/
+    font-style: $estilo; /*estilo*/
+    text-decoration: $deco; /*decoracion, por ejemplo subrayado*/
+    text-transform: $transform; /*transformacion, mayusculas, minuscuas, etc*/
+    text-align: $alineacion; /*alineacion de texto*/
+    line-height: $seplinea; /*separacion entre lineas*/
+    word-spacing: $sepword; /*separacion de palabras*/ 
+}
+
+
+/*Tamaño de las imagenes*/
+@mixin img_size($ancho, $alto, $mar_u, $mar_r, $mar_b, $mar_l){
+    width: $ancho;
+    height: $alto;
+    margin-top: $mar_u;
+    margin-right: $mar_r;
+    margin-bottom: $mar_b;
+    margin-left: $mar_l;
+}

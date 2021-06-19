@@ -1,0 +1,34 @@
+/*ESTILOS PARA BOTONES DE REDES SOCIALES QUE VAN A ESTAR ABAJO A LA DERECHA FIJO*/
+/*SOLO SE VAN A VER CUANDO LA PAGINA SE VEA EN UNA TABLET O MOVIL*/
+
+/*ICONO FACEBOOK*/
+.SocialMovilFb{
+        display: scroll;
+        position: fixed;
+        right: 5px;
+        bottom: 70px;
+    
+    .iconSocialMovil{
+        @include img_size(37px, auto, 0, 0, 0, 0);
+    }
+
+    @media only screen and (min-width: 990px){
+        display: none;
+    }
+}
+
+/*ICONO INSTAGRAM*/
+.SocialMovilIg{
+    display: scroll;
+    position: fixed;
+    right: 5px;
+    bottom: 30px;
+
+    .iconSocialMovil{
+        @include img_size(37px, auto, 0, 0, 0, 0);
+    }
+
+    @media only screen and (min-width: 990px){
+        display: none;
+    }
+}

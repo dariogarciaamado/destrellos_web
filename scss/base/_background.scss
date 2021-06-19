@@ -1,0 +1,7 @@
+/*ESTILOS PARA EL FONDO DE LA PAGINA, EN ESTE CASO UNA IMAGEN*/
+body{
+    background-image: url(https://i.ibb.co/C9WspmH/background-destrellos2.png);
+    background-repeat: no-repeat; /*no se repite la imagen*/
+    background-attachment: fixed;/*la imagen queda fija de fondo*/
+    background-size: cover; /*tamaño imagen automatico, se va ajustando para cubrir la pantalla*/
+}

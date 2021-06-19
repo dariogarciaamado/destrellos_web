@@ -1,0 +1,8 @@
+/*Reseteamos estilos*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*scroll suave*/
+    user-select:none; /*impedimos que el usuario pueda copiar o seleccionar el texto*/
+}
