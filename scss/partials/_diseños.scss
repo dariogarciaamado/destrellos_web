@@ -1,0 +1,85 @@
+/*ESTILO PARA SECCION DISEÑOS*/
+
+#diseños{
+    padding: (1rem 2vw);
+    position: relative;
+    
+    text-align: center;
+    align-items: center;
+
+    @media only screen and (min-width: 991px){
+        div{
+            /*esconde la imagen que es para versión mobile*/
+            .modmob{
+                display: none;
+            }
+
+            /*Titulo Diseño*/
+            h2{
+                
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: opacity(0%);
+                transition: all 1s;
+
+            
+                /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+                @include fuentes1(white, $fuente_titulos1, 3rem, bold, normal, none, uppercase, center, 5rem, .05rem);  
+            }
+
+            .modweb{
+                filter: blur(0px) brightness(100%) drop-shadow(0 0 14px rgba(0, 0, 0, 0.7)) invert(5%);
+                transition: all 1s;
+            }
+        }
+
+        &:hover .modweb{
+            filter: blur(2px) brightness(30%) drop-shadow(0 0 4px rgba(0, 0, 0, 0.7));
+            transition: all 1s;
+        } 
+
+        &:hover h2 {
+            filter:opacity(100%);
+            transition: all 1s;
+        }
+    }
+
+    @media only screen and (max-width: 990px){
+
+        div{
+            /*esconde la imagen que es para versión mobile*/
+            .modweb{
+                display: none;
+            }
+
+            /*Titulo Diseño*/
+            h2{
+                
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: opacity(100%);
+                transition: all 1s;
+                filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.9));
+
+                /*color letra, fuente, tamaño, tipo, estilo, decoracion, transformacion, alineacion, separacion de lineas, separacion de palabras*/
+                @include fuentes1(white, $fuente_titulos1, 6vw, bold, normal, none, uppercase, center, 3rem, .03rem);
+            }
+
+            .modmob{
+                filter: blur(0px) brightness(60%) drop-shadow(0 0 14px rgba(0, 0, 0, 0.7)) invert(5%);
+            }
+        }
+    }
+
+
+
+
+}
+
+/*FIN ESTILOS MODELOS*/

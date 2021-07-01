@@ -150,8 +150,8 @@
 
             <!--Titulo y descripcion-->
             <div class="col-lg-10 col-sm-10 col-10">
-                <h2 data-aos="fade-up" class="titulos1">Qué hacemos</h2>
-                <h4 data-aos="fade-up" class="textos1">
+                <h2 data-aos="zoom-in" class="titulos1">Qué hacemos</h2>
+                <h4 data-aos="zoom-in" data-aos-delay="200" class="textos1">
                     El cielo sobre nosotros cambia en todo momento, se mueve con nosotros. Llevamos a la forma física el mapa estelar o lunar de tu instante unico. 
                     <p>Juntos, podemos hacer posible que tengas el cielo en tus manos, y detener el tiempo en ese preciso instante que quedó guardado en el corazón.</p>
                 
@@ -171,12 +171,13 @@
 
     <!------------------------------------------------------------------------------------------------------------------------------------->
     
-    <!--SECCION MODELOS-->
-    <section data-aos="zoom-in" id="modelos">
+    <!--SECCION DISEÑOS-->
+    <section data-aos="zoom-in" id="diseños">
         <a href="diseños.html">
         <div class="row-justify-content-center modelos">
-            <img class="col-lg-10 col-sm-10 col-10" src="images/barra_modelos.png" alt="">
-            <h2 data-aos="zoom-in" class="col-lg-10 col-sm-10 col-10">descubrí nuestros diseños</h2>
+            <img class="col-lg-10 col-sm-10 col-10 modweb" src="images/barra_modelos.png" alt="">
+            <img class="col-lg-10 col-sm-10 col-10 modmob" src="images/barra_modelos_mobile.png" alt="">
+            <h2  class="col-lg-10 col-sm-10 col-10">descubrí nuestros diseños</h2>
         </div>
         </a>    
     </section>
@@ -184,10 +185,44 @@
     <!------------------------------------------------------------------------------------------------------------------------------------->
 
     <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <button type="button" class="btn botonContacto" data-bs-toggle="modal" data-bs-target="#exampleModal" >Formulario de Contacto</button>
 
-    
 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content contactoFondo">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Escribinos para realizar tu pedido o consultarnos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        </form>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary botonContacto" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary botonContacto">Enviar Mensaje</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
     <!------------------------------------------------------------------------------------------------------------------------------------->
@@ -231,7 +266,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 2000,
+        duration: 1000,
       });
     </script>
 
